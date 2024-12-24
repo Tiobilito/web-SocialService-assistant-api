@@ -1,27 +1,47 @@
-# web-mind-assistant-api
+# web-SocialService-assistant-api
 
-Crea tu entorno virtual con:
+Crea tu entorno virtual con (aunque puede no ser necesario):
 
-``` shell
+```shell
 python -m venv venv
 ```
 
-Activa tu entorno virtual en window con:
+Activa tu entorno virtual en Windows con:
 
-``` shell
+```shell
 venv\Scripts\activate
 ```
 
-Puede llegar a ver errores al iniciar el entorno en windows, lo que se puede hacer es ejecutar el siguiente comando:
+Puede haber errores al iniciar el entorno en Windows. Si ocurre, puedes ejecutar el siguiente comando (en PowerShell ejecutado como administrador):
 
-``` shell
+```shell
 Set-ExecutionPolicy RemoteSigned
 ```
 
-Apartir de aquí ya puedes instalar paquetes normalmente con **pip**
+Para revertir dicha acción, ejecuta:
+
+```shell
+Set-ExecutionPolicy Restricted
+```
+
+Instala los paquetes de `requirements.txt`:
+
+```shell
+pip install -r ./requirements.txt
+```
+
+A partir de aquí ya puedes instalar paquetes normalmente con **pip**.
 
 ### NOTAS:
 
-1. instala keras, keras_preprocessing y tensorflow para no tener fallas
+1. Instala `keras`, `keras_preprocessing` y `tensorflow` para evitar fallos:
 
+```shell
 pip freeze > requirements.txt
+```
+
+2. Para salir del entorno virtual, ejecuta:
+
+```shell
+deactivate
+```
