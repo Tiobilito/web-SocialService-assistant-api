@@ -46,6 +46,22 @@ pip freeze > requirements.txt
 deactivate
 ```
 
+### Entrenar el modelo
+
+Para entrenar el modelo con tus propios datos, sigue estos pasos:
+
+1. Abre el archivo `dataset.xlsx` en la carpeta `data`.
+2. Reemplaza las columnas `USUARIO` y `ASISTENTE` con tus propias preguntas y respuestas.
+3. Borra todos los archivos en la carpeta `data` excepto `dataset.xlsx`.
+4. Ejecuta el script de la API para que el modelo se entrene automáticamente si no existen los archivos necesarios:
+
+```shell
+cd api
+python api.py
+```
+
+Esto entrenará el modelo con tus datos y generará los archivos necesarios en la carpeta `data`.
+
 ### Ejecutar la API
 
 Para ejecutar la API, navega al directorio api y ejecuta el archivo api.py:
