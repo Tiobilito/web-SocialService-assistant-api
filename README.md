@@ -3,13 +3,13 @@
 Crea tu entorno virtual con (aunque puede no ser necesario):
 
 ```shell
-python -m venv venv
+python -m venv <nombre_del_entorno>
 ```
 
 Activa tu entorno virtual en Windows con:
 
 ```shell
-venv\Scripts\activate
+<nombre_del_entorno>\Scripts\activate
 ```
 
 Puede haber errores al iniciar el entorno en Windows. Si ocurre, puedes ejecutar el siguiente comando (en PowerShell ejecutado como administrador):
