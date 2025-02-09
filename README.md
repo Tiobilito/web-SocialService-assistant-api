@@ -45,3 +45,22 @@ pip freeze > requirements.txt
 ```shell
 deactivate
 ```
+
+### Ejecutar la API
+
+Para ejecutar la API, navega al directorio api y ejecuta el archivo api.py:
+
+```shell
+cd api
+python api.py
+```
+
+### Probar la API
+
+Para probar la API desde el navegador, puedes utilizar la siguiente URL:
+
+```
+http://localhost:5000/pregunta?message=tu_pregunta
+```
+
+Reemplaza `tu_pregunta` con la pregunta que deseas enviar al modelo. La respuesta del modelo se mostrará en formato JSON en el navegador.

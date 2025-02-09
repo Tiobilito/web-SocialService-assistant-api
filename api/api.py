@@ -24,6 +24,15 @@ def darPregunta():
         'respuesta': respuesta 
     })
 
+@app.route('/pregunta', methods=['GET'])
+def darPreguntaGet():
+    pregunta = request.args.get('message')
+    respuesta = modelo.procesar(pregunta)
+    print(respuesta)
+    return jsonify({ 
+        'respuesta': respuesta 
+    })
+
 if __name__ == '__main__':
     modelo = ChatBot()
     modelo.cargar()
