@@ -12,7 +12,7 @@ from sklearn.model_selection import train_test_split
 from sentence_transformers import SentenceTransformer, util
 import fasttext
 
-RUTA_DATASET = '../data/dataset.xlsx'
+RUTA_DATASET = './data/dataset.xlsx'
 
 class ChatBot():
     EPOCAS = 1500

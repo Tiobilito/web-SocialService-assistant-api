@@ -7,7 +7,7 @@ from keras.api.optimizers import Adam
 from keras.api.callbacks import ReduceLROnPlateau
 
 class ModeloLSTM():
-    NOM_ARCHIVO = '../data/modelo_lstm.h5'
+    NOM_ARCHIVO = './data/modelo_lstm.h5'
     
     def __init__(
         self, 

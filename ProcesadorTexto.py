@@ -9,8 +9,8 @@ class ProcesadorTexto():
     FILTRO_RESPUESTA = '"#$%&()*+-/:;<=>@[\\]^`{|}~'
     TOKEN_DESCONOCIDO = '<UNK>'
     MODO_PADDING = 'post'
-    RUTA_TOKENIZER_PREGUNTAS = '../data/tokenizer_preguntas.pkl'
-    RUTA_TOKENIZER_RESPUESTAS = '../data/tokenizer_respuestas.pkl'
+    RUTA_TOKENIZER_PREGUNTAS = './data/tokenizer_preguntas.pkl'
+    RUTA_TOKENIZER_RESPUESTAS = './data/tokenizer_respuestas.pkl'
     
     def __init__(self, rutaDataset = ''):
         self.rutaDataset = rutaDataset
