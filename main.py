@@ -5,9 +5,9 @@ from keras_preprocessing.sequence import pad_sequences
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '')))
 
-from preprocesamiento.ProcesadorTexto import ProcesadorTexto
-from posprocesador.FastText import FastText
-from model.LSTM import ModeloLSTM
+from ProcesadorTexto import ProcesadorTexto
+from FastText import FastText
+from LSTM import ModeloLSTM
 from sklearn.model_selection import train_test_split
 from sentence_transformers import SentenceTransformer, util
 import fasttext

@@ -1,6 +1,6 @@
 import fasttext
 import numpy as np
-from preprocesamiento.ProcesadorTexto import ProcesadorTexto
+from ProcesadorTexto import ProcesadorTexto
 
 class FastText:
     RUTA_ARCHIVO_PREGUNTAS = '../data/preguntas.txt'

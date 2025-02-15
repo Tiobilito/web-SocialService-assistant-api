@@ -3,7 +3,7 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '')))
 
-from chatbot.main import ChatBot
+from main import ChatBot
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)

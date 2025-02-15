@@ -1,6 +1,6 @@
 import numpy as np
 from pathlib import Path
-from posprocesador.FastText import FastText
+from FastText import FastText
 from keras.api.models import Sequential, load_model
 from keras.api.layers import Embedding, LSTM, Dense, TimeDistributed
 from keras.api.optimizers import Adam
