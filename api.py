@@ -19,7 +19,7 @@ def darPregunta():
     pregunta = request.get_json()
     pregunta = pregunta.get('message')
     respuesta = modelo.procesar(pregunta)
-    print(respuesta)
+    print("Respuesta: ", respuesta)
     return jsonify({ 
         'respuesta': respuesta 
     })
@@ -28,7 +28,7 @@ def darPregunta():
 def darPreguntaGet():
     pregunta = request.args.get('message')
     respuesta = modelo.procesar(pregunta)
-    print(respuesta)
+    print("Respuesta: ", respuesta)
     return jsonify({ 
         'respuesta': respuesta 
     })
