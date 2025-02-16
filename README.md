@@ -1,5 +1,7 @@
 # web-SocialService-assistant-api
 
+**Versión recomendada de Python:** 3.12.x
+
 Crea tu entorno virtual con (aunque puede no ser necesario):
 
 ```shell
